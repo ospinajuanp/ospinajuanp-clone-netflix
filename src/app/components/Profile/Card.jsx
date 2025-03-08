@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle, faPlus } from '@fortawesome/free-solid-svg-icons';
 import './Card.css';
 
-const Card = ({image, title}) => {
+const Card = ({image, title,handleClick}) => {
     return (        
     
         <li className="card">
@@ -22,7 +22,7 @@ const Card = ({image, title}) => {
             </>
             ) : (
             <>
-                <div className="card__image">
+                <div className="card__image" onClick={handleClick}>
                 <FontAwesomeIcon className="icon__circle" icon={faCircle} />
                 <FontAwesomeIcon className="icon__plus" icon={faPlus} />
                 </div>
