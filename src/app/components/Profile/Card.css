@@ -1,0 +1,71 @@
+.card{
+    cursor: pointer;
+    max-width: 200px;
+    min-width: 84px;
+    width: 10vw;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin: 0 2vw 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.card:hover{
+    & .card__title{
+        color: var(--color-text);
+        transition: all .3s ease-in-out;
+    }
+    & .card__image{
+        border-color: var(--color-text);
+        background-color: var(--color-text);
+        transition: all .3s ease-in-out;
+    }
+    & .icon__plus{
+        color: var(--color-text);
+        transition: all .3s ease-in-out;
+    }
+}
+
+.card__image{
+    border-radius: .4rem;
+    box-sizing: border-box;
+    height: 10vw;
+    overflow: hidden;
+    max-height: 200px;
+    max-width: 200px;
+    min-height: 84px;
+    min-width: 84px;
+    width: 10vw;
+    border: .2rem solid transparent;
+    
+}
+
+.card__title{
+    color: var(--color-quaternary);
+    display: block;
+    font-size: 1.3vw;
+    line-height: 1.2em;
+    margin: .6em 0;
+    min-height: 1.8em;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+.icon__circle{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5vw;
+    min-width: 50px;
+    color: var(--color-quaternary);
+}
+.icon__plus{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3.5vw;
+    min-width: 50px;
+    color: var(--color-background);
+}

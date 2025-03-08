@@ -1,0 +1,19 @@
+.profile{
+    max-width: 80%;
+    --base-line-height: 1.2;
+    line-height: var(--base-line-height);
+    margin: 0 auto;
+    text-align: center;
+}
+.profile__header{
+    margin: .67em 0;
+    font-size: 3.5vw;
+    font-weight: 100;
+}
+
+.profile__cards{
+    margin: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

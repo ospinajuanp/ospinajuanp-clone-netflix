@@ -1,7 +1,9 @@
+import Profile from "@/app/components/Profile/Profile";
+
 export default function Home() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <Profile />
+    </>
   );
 }
