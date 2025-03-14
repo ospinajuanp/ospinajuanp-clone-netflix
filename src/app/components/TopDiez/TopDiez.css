@@ -1,0 +1,90 @@
+.top-diez {
+    margin-top: -19vh;
+    padding: 0 4%;
+    position: relative;
+  }
+  
+  .top-diez__title {
+    font-size: 1.1875rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Contenedor del carrusel con overflow oculto */
+  .carousel-container {
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  /* Lista en flex para alinear los li en fila y aplicar la transición */
+  .top-diez__list {
+    display: flex;
+    transition: transform 0.5s ease;
+    /* Opcional: quitar margen/padding para evitar espacios inesperados */
+    margin: 0;
+    padding: 0;
+    gap: 1%;
+  }
+  
+  /* Cada li ocupa el 20% del ancho del contenedor (5 elementos visibles en 100%) */
+  .top-diez__list li {
+    flex: 0 0 19%;
+    height: 11rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    /* Si usas gap, puedes considerar añadir margin a cada li */
+    /* margin-right: 1rem;  (Asegúrate de ajustar el cálculo si lo agregas) */
+}
+  /* Botones de navegación */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color-quaternary);
+    color: var(--color-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+.top-diez__number{
+    width: 50%;
+    height: 20%;
+    color: var(--color-text);
+    font-size: 600%;
+    text-align: end;
+}
+.top-diez__image{
+  height: 100%;
+}
+
+.top-diez__image img{
+    max-width: none;
+    height: 90%;
+    object-fit: cover;
+}
+.modal{
+  width: 18.875rem;
+  height: 22rem;
+  transform: scale(1);
+  position: absolute;
+  background: blue;
+  border-radius: .4rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 60px -35px rgba(128,128,128,1);  
+}
+.modal div img{
+  max-height: 11rem;
+  object-fit: cover;
+  object-position: top;
+}
