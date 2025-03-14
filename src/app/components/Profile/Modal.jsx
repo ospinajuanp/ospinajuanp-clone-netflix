@@ -1,8 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import './Modal.css';
 import { useState } from 'react';
+import Image from 'next/image';
+import './Modal.css';
 
 const Modal = ({handleClick, setProfiles , profiles}) => {
     let [idImg, setIdImg] = useState(1);
@@ -40,7 +41,7 @@ const Modal = ({handleClick, setProfiles , profiles}) => {
                         <p className="modal__text">Agrega un perfil para otra persona que ve Netflix.</p>
                     </div>
                     <div className="content__user" >
-                        <img className="user__image" onClick={handleImg} src={`/img/user${idImg}.png`} alt="" />
+                        <Image className="user__image" onClick={handleImg} src={`/img/user${idImg}.png`} width={200} height={200} alt="" />
                         <input id="user__name" className="user__name" type="text" placeholder="Nombre"/>
                     </div>
                     <div className="content__kid">
@@ -48,8 +49,8 @@ const Modal = ({handleClick, setProfiles , profiles}) => {
                             <h3>Perfil de niños</h3>
                             <p>Ver solo contenido infantil</p>
                         </div>
-                        <div class="checkbox-wrapper-14">
-                            <input id="s1-14" type="checkbox" class="switch"/>
+                        <div className="checkbox-wrapper-14">
+                            <input id="s1-14" type="checkbox" className="switch"/>
                         </div>
                     </div>
                     <div className="content__buttons">

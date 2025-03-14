@@ -45,6 +45,7 @@ const Profile = () => {
                     key={index}
                     image={profile.image}
                     title={profile.title}
+                    id={index+1}
                     handleClick={profile.title === "Agregar perfil" ? handleClick : undefined}
                     />
                 ))} 
